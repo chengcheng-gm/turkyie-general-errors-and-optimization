@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Erros Gerais & Otimizações</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    max-width: 900px;
+    margin: auto;
+  }
+  h1 {
+    margin-bottom: 20px;
+  }
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+  li {
+    border: 1px solid #ddd;
+    padding: 10px 10px 10px 15px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .green {
+    background-color: #3ca339 !important;
+    color: white;
+  }
+  .red {
+    background-color: #db3747 !important;
+    color: white;
+  }
+  .buttons {
+    display: flex;
+    gap: 8px;
+  }
+  button {
+    font-weight: bold;
+    border: none;
+    color: white;
+    padding: 6px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  button.green-btn {
+    background-color: #3ca339;
+  }
+  button.red-btn {
+    background-color: #db3747;
+  }
+  #pdf-btn {
+    margin-top: 30px;
+    background-color: #007bff;
+    padding: 12px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 6px;
+  }
+  
+   body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    max-width: 900px;
+    margin: auto;
+
+    /* Fundo */
+    background-image: url('images/KV-DDTank2.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+    /* Apenas a imagem de fundo esbranquiçada */
+    filter: brightness(1) contrast(1.1);
+}
+
+</style>
+</head>
+<body>
+
+<h1>Corrigidos | Não Corrigidos</h1>
+
+<ul id="lista-erros">
+  <li id="item-1">1 - HALL OF FAME – Guild Tab Problem
+    <div class="buttons">
+      <button class="green-btn" onclick="marcar(1,'green')">✔</button>
+      <button class="red-btn" onclick="marcar(1,'red')">✖</button>
+    </div>
+  </li>
+  <li id="item-2">2 - PROBLEM WITH THE DEVIL'S TREASURE: Magic Stone Won't Open
+    <div class="buttons">
+      <button class="green-btn" onclick="marcar(2,'green')">✔</button>
+      <button class="red-btn" onclick="marcar(2,'red')">✖</button>
+    </div>
+  </li>
+  <li id="item-3">3 - PROBLEM WITH BETWEEN SERVERS
+    <div class="buttons">
+      <button class="green-btn" onclick="marcar(3,'green')">✔</button>
+      <button class="red-btn" onclick="marcar(3,'red')">✖</button>
+    </div>
+  </li>
+  <li id="item-4">4 - PROBLEM: BAPTISM FUNCTION
+    <div class="buttons">
+      <button class="green-btn" onclick="marcar(4,'green')">✔</button>
+      <button class="red-btn" onclick="marcar(4,'red')">✖</button>
+    </div>
+  </li>
+  <li id="item-5">5 - ERROR IN THE "WEDDING SYSTEM"
+    <div class="buttons">
+      <button class="green-btn" onclick="marcar(5,'green')">✔</button>
+      <button class="red-btn" onclick="marcar(5,'red')">✖</button>
+    </div>
+  </li>
+  <li id="item-6">6 - PROBLEM: EQUIPMENT PET BUG
+    <div class="buttons">
+      <button class="green-btn" onclick="marcar(6,'green')">✔</button>
+      <button class="red-btn" onclick="marcar(6,'red')">✖</button>
+    </div>
+  </li>
+  <li id="item-7">7 - ERROR IN THE "CORSÁRIO" INSTANCE
+    <div class="buttons">
+      <button class="green-btn" onclick="marcar(7,'green')">✔</button>
+      <button class="red-btn" onclick="marcar(7,'red')">✖</button>
+    </div>
+  </li>
+  <li id="item-8">8 - WEAPON MODIFICATION - FLIPERAMA-KING OF GAMES
+    <div class="buttons">
+      <button class="green-btn" onclick="marcar(8,'green')">✔</button>
+      <button class="red-btn" onclick="marcar(8,'red')">✖</button>
+    </div>
+  </li>
+  <li id="item-9">9 - PROBLEM: REQUINTED PET EQUIPMENT AT TREASURE MAP
+    <div class="buttons">
+      <button class="green-btn" onclick="marcar(9,'green')">✔</button>
+      <button class="red-btn" onclick="marcar(9,'red')">✖</button>
+    </div>
+  </li>
+  <li id="item-10">10 - CORRECTION REQUEST FOR FESTIVAL AYI EVENT
+    <div class="buttons">
+      <button class="green-btn" onclick="marcar(10,'green')">✔</button>
+      <button class="red-btn" onclick="marcar(10,'red')">✖</button>
+    </div>
+  </li>
+  <li id="item-11">11 - IMAGE ISSUE - "CRISTAL DE MANA" ITEM
+    <div class="buttons">
+      <button class="green-btn" onclick="marcar(11,'green')">✔</button>
+      <button class="red-btn" onclick="marcar(11,'red')">✖</button>
+    </div>
+  </li>
+  <li id="item-12">12 - SELLING MAGIC STONES - SPECIFIC PROBLEM FOR BOMBON
+    <div class="buttons">
+      <button class="green-btn" onclick="marcar(12,'green')">✔</button>
+      <button class="red-btn" onclick="marcar(12,'red')">✖</button>
+    </div>
+  </li>
+  <li id="item-13">13 - EXCHANGE ACTIVITY TAB ERROR
+    <div class="buttons">
+      <button class="green-btn" onclick="marcar(13,'green')">✔</button>
+      <button class="red-btn" onclick="marcar(13,'red')">✖</button>
+    </div>
+  </li>
+  <li id="item-14">14 - INVITE BUTTON ERROR
+    <div class="buttons">
+      <button class="green-btn" onclick="marcar(14,'green')">✔</button>
+      <button class="red-btn" onclick="marcar(14,'red')">✖</button>
+    </div>
+  </li>
+  <li id="item-15">15 - LV4 PRACTICE POTION ERROR
+    <div class="buttons">
+      <button class="green-btn" onclick="marcar(15,'green')">✔</button>
+      <button class="red-btn" onclick="marcar(15,'red')">✖</button>
+    </div>
+  </li>
+</ul>
+
+<button id="pdf-btn" onclick="gerarPDF()">Salvar como PDF</button>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+
+<script>
+  function marcar(id, cor) {
+    const item = document.getElementById('item-' + id);
+    item.classList.remove('green', 'red');
+    if(cor === 'green') item.classList.add('green');
+    else if(cor === 'red') item.classList.add('red');
+  }
+
+  async function gerarPDF() {
+    const { jsPDF } = window.jspdf;
+    const lista = document.getElementById('lista-erros');
+
+    // Gera imagem da lista com html2canvas
+    const canvas = await html2canvas(lista, { scale: 2, scrollY: -window.scrollY });
+    const imgData = canvas.toDataURL('image/png');
+
+    const pdf = new jsPDF('p', 'pt', 'a4');
+    const pdfWidth = pdf.internal.pageSize.getWidth();
+    const pdfHeight = (canvas.height * pdfWidth) / canvas.width;
+
+    pdf.addImage(imgData, 'PNG', 0, 0, pdfWidth, pdfHeight);
+    pdf.save('marcacao-de-erros.pdf');
+  }
+</script>
+
+</body>
+</html>
