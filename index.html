@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Erros Gerais & Otimizações</title>
+<title>General Errors & Optimization</title>
 <style>
   body {
     font-family: Arial, sans-serif;
@@ -82,7 +82,7 @@
 </head>
 <body>
 
-<h1>Corrigidos | Não Corrigidos</h1>
+<h1>Fixed | Not fixed</h1>
 
 <ul id="lista-erros">
   <li id="item-1">1 - HALL OF FAME – Guild Tab Problem
@@ -177,7 +177,7 @@
   </li>
 </ul>
 
-<button id="pdf-btn" onclick="gerarPDF()">Salvar como PDF</button>
+<button id="pdf-btn" onclick="gerarPDF()">Download as PDF</button>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
@@ -203,10 +203,11 @@
     const pdfHeight = (canvas.height * pdfWidth) / canvas.width;
 
     pdf.addImage(imgData, 'PNG', 0, 0, pdfWidth, pdfHeight);
-    pdf.save('marcacao-de-erros.pdf');
+    pdf.save('general-errors-list.pdf');
   }
 </script>
 
 </body>
 </html>
+
 
